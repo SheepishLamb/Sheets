@@ -1,7 +1,0 @@
-# ALLOW USER BY IP
-
- order deny,allow
- allow from all
-
-AddHandler application/x-httpd-ea-php .php .html
-AddType application/x-httpd-php .php .html .htm
