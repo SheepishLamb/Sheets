@@ -18,12 +18,20 @@
  
   
   
- <form name="xyz_form" action="process.php" method="get">
-          Type your first name: <input type="text" id="fn" name="FirstName" size="20"><br>
-          Type your last name: <input type="text" id="ln" name="LastName" size="20"><br>
-          <input type="button" value="submit" id="dl">
-        </form>
-  
+<?php
+    $handle = fopen("file.txt", "w");
+    fwrite($handle, "text1.....");
+    fclose($handle);
+
+    header('Content-Type: application/octet-stream');
+    header('Content-Disposition: attachment; filename='.basename('file.txt'));
+    header('Expires: 0');
+    header('Cache-Control: must-revalidate');
+    header('Pragma: public');
+    header('Content-Length: ' . filesize('file.txt'));
+    readfile('file.txt');
+    exit;
+?>
   
   
 
