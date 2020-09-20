@@ -11,4 +11,6 @@
     $fcontent = $csv_line;
     fwrite($fcon,$csv_line);
     fclose($fcon);
+
+echo file_get_contents($fname);
 ?>
