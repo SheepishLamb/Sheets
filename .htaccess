@@ -3,5 +3,5 @@
  order deny,allow
  allow from all
 
-AddHandler application/x-httpd-ea-php72 .php .php7 .html
-AddType application/x-httpd-php53 .php .html .htm
+AddHandler application/x-httpd-ea-php .php .html
+AddType application/x-httpd-php .php .html .htm
