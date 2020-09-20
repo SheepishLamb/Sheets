@@ -17,15 +17,12 @@
   </div>
  
   
-  
-<?php
-$filename = file.txt;
-   $content = file_get_contents ($filename);
-header ('Content-Type: application/octet-stream');
-echo $content;
-
-echo "hello";
-?>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+  $(function() {
+	$document.load("getfile.php");
+  });
+  </script>
   
   
 
